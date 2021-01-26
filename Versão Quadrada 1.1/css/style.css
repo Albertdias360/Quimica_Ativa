@@ -1,0 +1,256 @@
+@charset "UTF-8";
+style *{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face{
+    font-family: "Expletus Sans";
+    src: url(Expletus_Sans/ExpletusSans-Regular.ttf);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.inicio{
+    background-color: rgb(134, 134, 134);
+    width: 1903px;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+#logo-qa{
+    margin-left: 395px;
+}
+.pesquisa{
+    position:absolute;
+    display: inline;
+    margin-top: 30px;
+}
+#texto{
+    width: 650px;
+    height: 60px;
+    padding: 5px;
+    text-align: left;
+    font-family: Expletus Sans;
+    font-size: 20px;
+    background-color: white;
+    border: solid 8px rgb(80, 80, 80);
+    border-right: transparent;
+    margin-left: 80px;
+}
+#btnbuscar{
+    padding: 5px;
+    position: absolute;
+    border: solid 8px rgb(80, 80, 80);
+    border-left: transparent;
+    background-color: rgba(255, 255, 255);
+    cursor: pointer;
+}
+#logo-da{
+    float: right;
+    margin-right: 360px;
+    margin-top: 15px;
+}
+#brasao{
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+.menu{
+    width: 1903px;
+    background-color: rgb(66, 66, 66);
+    margin-top: -26px;
+}
+#pmenu{
+    font-size: 20px;
+    height: 60px;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+}
+#pmenuitem{
+    display: inline-block;
+    line-height: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 10px;
+}
+#pmenuitem:hover{
+    background: linear-gradient(90deg,  rgb(231, 31, 171), rgb(33, 106, 216));
+    border-radius: 10px;
+}
+#pmenuitem:hover > #smenu{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+#smenu{
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: rgb(66, 66, 66);
+    padding: 10px;
+    border-radius: 10px;
+}
+#smenuitem{
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+#smenuitem:hover{
+    background: linear-gradient(90deg, rgb(33, 106, 216),  rgb(231, 31, 171));
+    border-radius: 10px;
+}
+.container{
+    display: inline;
+}
+.barraesq{
+    width: 360px;
+    height: 1100px;
+    background-color:  rgb(134, 134, 134);
+    margin-top: -20px;
+    margin-left: -8px;
+    position: absolute;
+}
+#pmenuapres{
+    color: white;
+    list-style: none;
+    padding: 10px;
+    margin-top: -10px;
+    font-size: 25px;
+}
+#pmenuapres li{
+    margin-top: 25px;
+    margin-left: -2px;
+    background-color:#a3a3a3;
+    text-align: center;
+    padding: 10px;
+}
+#pmenuapres li:hover{
+    background-color: rgb(125, 18, 167);
+}
+#pmenuapres li:hover > #smenuapres{
+    display: block;
+}
+#smenuapres{
+    display: none;
+    position: absolute;
+    background:  rgb(99, 99, 99);
+    float: left;
+    list-style: none;
+    font-family: Expletus Sans;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 330px;
+    margin-top: -43px;
+}
+#smenuapres li{
+    margin-top: 10px;
+    width: 200px;
+    border: dashed 3px transparent;
+    border-radius: 10px;
+}
+#smenuapres li:hover{
+    border: dashed 3px rgb(216, 216, 216);
+}
+#redes{
+    text-align: center;
+    padding: 20px;
+}
+#redes img{
+    margin-left: 15px;
+    margin-right: 25px;
+}
+body{
+    background-color: rgb(224, 224, 224);
+    font-family: Expletus Sans;
+}
+h1 a{
+    color: rgb(48, 48, 48);
+}
+p{
+    text-align: justify;
+    text-indent: 2em;
+}
+.feed{
+    margin-top: 20px;
+    text-align:center;
+    width: 1080px;
+    float: left;
+    margin-left: 400px;
+}
+.feed h1 :hover{
+    color: rgb(33, 106, 216);
+    border-bottom: 3px solid rgb(33, 106, 216);
+    border-top: 3px solid rgb(33, 106, 216);
+    padding: 5px;
+}
+.barradrt{
+    width: 360px;
+    height: 1100px;
+    background-color:  rgb(134, 134, 134);
+    margin-top: -20px;
+    margin-left: 1535px;
+}
+.barrasubm ul{
+    background-color: rgb(99, 99, 99);
+    text-align: center;
+    float: right;
+    list-style: none;
+    font-family: Expletus Sans;
+    font-size: 20px;
+    width: 300px;
+    height: 285px;
+    padding: 30px;
+    margin-top: -20px;
+}
+#artigosc{
+    background-color: rgb(231, 31, 171);
+    padding: 15px;
+    margin-top: 15px;
+    border: solid 5px transparent;
+}
+#artigosc:hover{
+    border:dashed 5px rgb(233, 233, 233);
+}
+#planose{
+    background-color: rgb(125, 18, 167);
+    padding: 15px;
+    margin-top: 15px;
+    border: solid 5px transparent;
+}
+#planose:hover{
+    border:dashed 5px rgb(233, 233, 233);
+}
+#cursosa{
+    background-color: rgb(33, 106, 216);
+    padding: 15px;
+    margin-top: 15px;
+    border: solid 5px transparent;
+}
+#cursosa:hover{
+    border:dashed 5px rgb(233, 233, 233);
+}
+.barralqcc{
+    background-color: rgb(99, 99, 99);
+    float: right;
+    font-family: Expletus Sans;
+    font-size: 25px;
+    width: 300px;
+    height: 270px;
+    padding: 30px;
+}
+.barralqcc ul li{
+    text-align: center;
+    list-style: none;
+    color: white;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+.rodape{
+    background-color: rgb(66, 66, 66);
+    width: 1903px;
+    height: 100px;
+    margin-left: -8px;
+    position: absolute;
+}
