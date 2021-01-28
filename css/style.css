@@ -254,3 +254,17 @@ p{
     margin-left: -8px;
     position: absolute;
 }
+@media only screen and (max-width: 768px) {
+    .inicio{
+        width: 100%;
+    }
+    #texto{
+        width: 70%;
+    }
+    .menu{
+        width: 100%;
+    }
+    .barraesq{
+        display: none;
+    }
+}
