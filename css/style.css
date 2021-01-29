@@ -7,71 +7,65 @@ style *{
     font-family: "Expletus Sans";
     src: url(Expletus_Sans/ExpletusSans-Regular.ttf);
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 a{
     text-decoration: none;
     color: white;
 }
 .inicio{
     background-color: rgb(134, 134, 134);
-    width: 1903px;
-    margin-top: -8px;
-    margin-left: -8px;
+    width: 100%;
 }
 #logo-qa{
-    margin-left: 395px;
+    margin-left: 19%;
 }
 .pesquisa{
-    position:absolute;
-    display: inline;
-    margin-top: 30px;
+    display: inline-flex;
+    margin-left: 5%;
+    width: 40%;
 }
 #texto{
-    width: 650px;
+    width: 100%;
     height: 60px;
-    padding: 5px;
-    text-align: left;
+    text-indent:1em;
     font-family: Expletus Sans;
     font-size: 20px;
     background-color: white;
     border: solid 8px rgb(80, 80, 80);
     border-right: transparent;
-    margin-left: 80px;
 }
 #btnbuscar{
-    padding: 5px;
-    position: absolute;
     border: solid 8px rgb(80, 80, 80);
     border-left: transparent;
     background-color: rgba(255, 255, 255);
     cursor: pointer;
 }
 #logo-da{
-    float: right;
-    margin-right: 360px;
-    margin-top: 15px;
+    margin-top: 3px;
+    margin-left: 2%;
 }
 #brasao{
-    float: right;
-    margin-right: 15px;
-    margin-top: 15px;
+    margin-top: 3px;
 }
 .menu{
-    width: 1903px;
+    width: 100%;
     background-color: rgb(66, 66, 66);
-    margin-top: -26px;
+    margin-top: -6px;
 }
 #pmenu{
     font-size: 20px;
     height: 60px;
     padding: 5px;
-    position: relative;
     text-align: center;
 }
 #pmenuitem{
     display: inline-block;
     line-height: 60px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 3%;
+    padding-right: 3%;
     border-radius: 10px;
 }
 #pmenuitem:hover{
@@ -102,21 +96,20 @@ a{
     border-radius: 10px;
 }
 .container{
-    display: inline;
+    display: flex;
+}
+.conteudo{
+    display: flex;
 }
 .barraesq{
-    width: 360px;
+    width: 19%;
     height: 1100px;
     background-color:  rgb(134, 134, 134);
-    margin-top: -20px;
-    margin-left: -8px;
-    position: absolute;
 }
 #pmenuapres{
     color: white;
     list-style: none;
     padding: 10px;
-    margin-top: -10px;
     font-size: 25px;
 }
 #pmenuapres li{
@@ -136,12 +129,11 @@ a{
     display: none;
     position: absolute;
     background:  rgb(99, 99, 99);
-    float: left;
     list-style: none;
     font-family: Expletus Sans;
     font-size: 20px;
     padding: 5px;
-    margin-left: 330px;
+    margin-left: 80%;
     margin-top: -43px;
 }
 #smenuapres li{
@@ -175,9 +167,8 @@ p{
 .feed{
     margin-top: 20px;
     text-align:center;
-    width: 1080px;
+    width: 60%;
     float: left;
-    margin-left: 400px;
 }
 .feed h1 :hover{
     color: rgb(33, 106, 216);
@@ -186,29 +177,24 @@ p{
     padding: 5px;
 }
 .barradrt{
-    width: 360px;
+    width: 19%;
     height: 1100px;
     background-color:  rgb(134, 134, 134);
-    margin-top: -20px;
-    margin-left: 1535px;
 }
 .barrasubm ul{
     background-color: rgb(99, 99, 99);
     text-align: center;
-    float: right;
     list-style: none;
     font-family: Expletus Sans;
     font-size: 20px;
-    width: 300px;
-    height: 285px;
     padding: 30px;
-    margin-top: -20px;
 }
 #artigosc{
     background-color: rgb(231, 31, 171);
     padding: 15px;
     margin-top: 15px;
     border: solid 5px transparent;
+    word-wrap: break-word;
 }
 #artigosc:hover{
     border:dashed 5px rgb(233, 233, 233);
@@ -218,6 +204,7 @@ p{
     padding: 15px;
     margin-top: 15px;
     border: solid 5px transparent;
+    word-wrap: break-word;
 }
 #planose:hover{
     border:dashed 5px rgb(233, 233, 233);
@@ -227,18 +214,17 @@ p{
     padding: 15px;
     margin-top: 15px;
     border: solid 5px transparent;
+    word-wrap: break-word;
 }
 #cursosa:hover{
     border:dashed 5px rgb(233, 233, 233);
 }
 .barralqcc{
     background-color: rgb(99, 99, 99);
-    float: right;
     font-family: Expletus Sans;
     font-size: 25px;
-    width: 300px;
-    height: 270px;
     padding: 30px;
+    margin-top: 20px;
 }
 .barralqcc ul li{
     text-align: center;
@@ -249,22 +235,64 @@ p{
 }
 .rodape{
     background-color: rgb(66, 66, 66);
-    width: 1903px;
+    width: 100%;
     height: 100px;
-    margin-left: -8px;
     position: absolute;
 }
 @media only screen and (max-width: 768px) {
+
+}
+@media only screen and (max-width: 480px) {
     .inicio{
-        width: 100%;
+        width: 105%;
+    }
+    #logo-qa{
+        margin-left: 0;
     }
     #texto{
         width: 70%;
+        display: none;
+    }
+    #btnbuscar{
+        display: none;
+    }
+    #logo-da{
+        margin: 0%;
+    }
+    #brasao{
+        margin: 0%;
     }
     .menu{
         width: 100%;
+        margin: 0%;
+        margin-top: -7px;
+    }
+    #btnmenu{
+        display: inline;
+        background-color: rgb(231, 31, 171);
+        border: none;
+    }
+    #pmenu{
+        position: relative;
+        margin: 0%;
+        padding: 0%;
+    }
+    #pmenuitem{
+        display: none;
     }
     .barraesq{
         display: none;
+    }
+    .feed{
+        width: 100%;
+        margin: 0%;
+    }
+    .barradrt{
+        margin: 0%;
+        display: none;
+    }
+    .rodape{
+        width: 100%;
+        margin-top: 1000px;
     }
 }
