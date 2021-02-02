@@ -12,8 +12,12 @@
         <header>
             <nav>
                 <div class="inicio">
-                    <a href="index.html"><picture id="logo-qa">
-                    <img src="imagens/logoqa/logoqa135px.png" alt="logo da revista química ativa"></picture></a>
+                    <a href="index.html">
+                        <picture id="logo-qa">
+                            <source media="(max-width: 600px)" srcset="imagens/logoqa/logoqa100px.png">
+                            <img src="imagens/logoqa/logoqa135px.png" alt="logo da revista química ativa">
+                        </picture>
+                    </a>
                     <form class="pesquisa">
                         <input type="search" id="texto" list="historico" placeholder="Pesquisar...">
                         <datalist id="historico">
@@ -28,9 +32,11 @@
                         <a href="http://www.uefs.br/" target="_blank" rel="external"><img src="imagens/brasaouefs60px.png" alt="Brasão símbolo da UEFS"></a>
                     </picture>
                 </div>
-                <div class="menu">
-                    <input type="checkbox" name="menures" id="menures">
-                    <label for="menures">Menu &#9776;</label>
+            </nav>
+
+            <div class="menu">
+                    <input type="checkbox" name="menuresp" id="menucheck">
+                    <label for="menucheck" id="menuicon">Menu &#9776;</label>
                     <ul id="pmenu">
                         <li id="pmenuitem"><a href="#">Edições &#9660;</a>
                             <ul id="smenu">
@@ -75,6 +81,7 @@
                         </li>
                     </ul>
                 </div>
+                
             </nav>
         </header>
         
@@ -95,9 +102,24 @@
                             </ul>
                         </li>
                         <div id="redes">
-                            <a href="#"><img src="imagens/youtubeicon.webp" alt="YouTube da Revista Química Ativa" width="50px"></a>
-                            <a href="#"><img src="imagens/instagramicon.png" alt="Instagram da Revista Química Ativa" width="50px"></a>
-                            <a href="#"><img src="imagens/twittericon.webp" alt="Twitter da Revista Química Ativa" width="50px"></a>
+                            <a href="#">
+                                <picture>
+                                    <source media="(max-width: 400px)" srcset="imagens/youtubeicon35px.png">
+                                    <img src="imagens/youtubeicon50px.png" alt="YouTube da Revista Química Ativa">
+                                </picture>
+                            </a>
+                            <a href="#">
+                                <picture>
+                                    <source media="(max-width: 400px)" srcset="imagens/instagramicon35px.png">
+                                    <img src="imagens/instagramicon50px.png" alt="Instagram da Revista Química Ativa">
+                                </picture>
+                            </a>
+                            <a href="#">
+                                <picture>
+                                    <source media="(max-width: 400px)" srcset="imagens/twittericon35px.png">
+                                    <img src="imagens/twittericon50px.png" alt="Twitter da Revista Química Ativa">
+                                </picture>
+                            </a>
                         </div>
                     </ul>
                 </nav>
@@ -137,6 +159,22 @@
         <header>
             <nav>
                 <div class="rodape">
+                    <picture id="logo-darodape">
+                        <a href="#">
+                            <picture>
+                                <source media="(max-width: 600px)" srcset="imagens/logoda90px.png">
+                                <img src="imagens/logoda100px.png" alt="logo do diretório acadêmico">
+                            </picture>
+                        </a>
+                    </picture>
+                    <picture id="brasaorodape">
+                        <a href="http://www.uefs.br/" target="_blank" rel="external">
+                            <picture>
+                                <source media="(max-width: 600px)" srcset="imagens/brasaouefs55px.png">
+                                <img src="imagens/brasaouefs60px.png" alt="Brasão símbolo da UEFS">
+                            </picture>
+                        </a>
+                    </picture>
                 </div>
             </nav>
         </header>
