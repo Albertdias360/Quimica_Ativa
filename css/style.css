@@ -72,6 +72,9 @@ a{
 #brasaoresp{
     display: none;
 }
+#pmenures{
+    display: none;
+}
 #pmenu{
     font-size: 20px;
     height: 60px;
@@ -180,7 +183,7 @@ body{
 h1 a{
     color: rgb(48, 48, 48);
 }
-p{
+.feed p{
     text-align: justify;
     text-indent: 2em;
     padding: 5px;
@@ -282,7 +285,7 @@ p{
     }
 }
 @media only screen and (max-width: 950px) {
-    #menucheck:checked ~ #pmenu{
+    #menucheck:checked ~ #pmenures{
         display: block;
     }
     #menucheck:checked ~ #menuicon{
@@ -294,31 +297,55 @@ p{
         font-size: 25px;
         text-align: center;
     }
-    #pmenu{
+    #pmenures{
         display: none;
-        height: auto;
-        width: 98%;
-        padding: 0;
+        text-align: center;
+        font-size: 20px;
     }
-    #pmenuitem{
+    #pmenures input{
+        display: none;
+    }
+    #pmenures li{
         display: block;
         line-height: 35px;
         padding: 0;
-        margin-left: 2%;
+        color: white;
     }
-    #pmenuitem:hover{
+    #pmenures li p{
+        text-align: center;
+        
+    }
+    #edicheck:checked ~ #pmenuedi{
         transition: all .4s;
-        background: linear-gradient(rgb(33, 96, 216),rgb(33, 106, 216));
+        background-color: rgb(33, 106, 216);
     }
-    #smenu{
-        position: static;
-        width: 100%;
+    #edicheck:checked ~ .smenuedi{
+        display: inline-block;
+        background-color: tomato;
+    }
+    #artcheck:checked ~ #pmenuart{
+        transition: all .4s;
+        background-color: rgb(33, 106, 216);
+    }
+    #metcheck:checked ~ #pmenumet{
+        transition: all .4s;
+        background-color: rgb(33, 106, 216);
+    }
+    #curcheck:checked ~ #pmenucur{
+        transition: all .4s;
+        background-color: rgb(33, 106, 216);
+    }
+    #forcheck:checked ~ #pmenufor{
+        transition: all .4s;
+        background-color: rgb(33, 106, 216);
+    }
+    #smenures{
+        display: noe;
         background-color: rgb(83, 83, 83);
         padding: 0;
     }
-    #smenuitem:hover{
-        transition: all .4s;
-        background: linear-gradient(rgb(220, 30, 165),rgb(220, 30, 165));
+    #pmenu{
+        display: none;
     }
     .conteudo{
         display: inline-block;
@@ -446,6 +473,9 @@ p{
     }
     #redes{
         padding-left: 10%;
+    }
+    .feed h1 :hover{
+        border: none;
     }
     .barradrt{
         height: 270px;
